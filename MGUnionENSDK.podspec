@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
   
   # 依赖的自己的Framework
   s.vendored_frameworks ='MGUnionENSDK/MGUnionENSDK.framework'
-  s.resources = 'MGUnionENSDKReso.bundle'
+  s.resources = 'MGUnionENSDK/MGUnionENSDKReso.bundle'
   s.source_files = 'MGUnionENSDK/Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

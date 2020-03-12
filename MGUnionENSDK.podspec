@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGUnionENSDK'
-  s.version          = '0.1.4'
+  s.version          = '0.1.6'
   s.summary          = '微游戏海外联运SDK'
 
 # This description is used to generate tags and improve search results.
@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
   s.resources = 'MGUnionENSDK/MGUnionENSDKReso.bundle'
   # s.source_files = 'MGUnionENSDK/Classes/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
   
@@ -44,4 +44,5 @@ TODO: Add long description of the pod here.
   s.dependency 'FBSDKLoginKit'
   s.dependency 'FBSDKShareKit'
   s.dependency 'FBSDKPlacesKit'
+  
 end

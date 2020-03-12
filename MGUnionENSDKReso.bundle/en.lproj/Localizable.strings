@@ -1,0 +1,60 @@
+"Bind Account" = "Bind Account";
+"Guest" = "Guest";
+"Sign in with" = "Sign in with";
+
+"Start new game" = "Start new game";
+"ACCOUNT \n MANAGEMENT" = "ACCOUNT \n MANAGEMENT";
+"Bound" = "Bound";
+"Bind" = "Bind";
+"WARNING!" = "WARNING";
+"You can bind your game account to multiple personal accounts" = "You can bind your game account to multiple personal accounts";
+"CONFIRM" = "Confirm";
+"CANCEL" = "Cancel";
+"Login succeed" =  "Login succeed";
+"Binding Failed" =  "Binding Failed";
+"Bound Succeed" = "Bound Succeed";
+"Facebook account login failed" =  "Facebook account login failed";
+"Game Center account login failed. Please login Game Center in the system setting and restart the game" =  "Game Center account login failed. Please login Game Center in the system setting and restart the game";
+"payment successful" = "payment successful";
+"Order verification failed" =  "Order verification failed";
+"Payment failed" =  "Payment failed";
+"Switch failed" =  "Switch failed";
+"account hasn't been bound with game data before, switched failed." =  "account hasn't been bound with game data before, switched failed. ";
+"  You've already signed up. Please log in or chreate a new one with other methods." = "You've already signed up. Please log in or chreate a new one with other methods.";
+
+"Expired Authorization and failed to reauthorize. Please log in with GameCenter and Restart the game to reauthorize, or Continue to log in with other devices." = "Expired Authorization and failed to reauthorize. Please log in with GameCenter and Restart the game to reauthorize, or Continue to log in with other devices.";
+"Account Errors. You haven't connected with the third party account yet. The current account data won't be stored if you continue to log in with other accounts. Or click Cancel to go to Custom Service. Your Account UID: " = "Account Errors. You haven't connected with the third party account yet. The current account data won't be stored if you continue to log in with other accounts. Or click Cancel to go to Custom Service. Your Account UID: ";
+"Expired Authorization and failed to reauthorize. Please check your Facebook and Restart the game to reauthorize, or Continue to log in with other devices." = "Expired Authorization and failed to reauthorize. Please check your Facebook and Restart the game to reauthorize, or Continue to log in with other devices.";
+"Expired Authorization and failed to reauthorize. Please check your Facebook and Restart the game to reauthorize, or Continue to log in with other devices." = "Expired Authorization and failed to reauthorize. Please check your Facebook and Restart the game to reauthorize, or Continue to log in with other devices.";
+"No new account login, if you are sure you want to switch accounts, please switch GameCenter account from system settings or change account from Facebook app" = "No new account login, if you are sure you want to switch accounts, please switch GameCenter account from system settings or change account from Facebook app";
+
+"Game data on the current device is not bound,Switching account will result in the loss of game data!Would you like to switch?" = "Game data on the current device is not bound,Switching account will result in the loss of game data!Would you like to switch?";
+
+"Please enter Confirm" = "Please enter Confirm";
+
+"Confirm" = "Confirm";
+
+"The current" = "The current";
+
+"Network Errors!" = "Network Errors!";
+
+"Unknown Errors, please try again later." = "Unknown Errors, please try again later.";
+
+"Are you sure you want to start new game data？(This data has been bound ,you can recover it by switching accounts)" = "Are you sure you want to start new game data？(This data has been bound ,you can recover it by switching accounts)";
+
+"The current account hasn't been bound with any other accounts, please bind with the third party's account in case of data loss." = "The current account hasn't been bound with any other accounts, please bind with the third party's account in case of data loss.";
+
+" Confirm "  = "Confirm";
+
+" Cancel " = "Cancel";
+
+"account has been bound with the game data before." = "account has been bound with the game data before.";
+
+"Bind Account" = "Bind Account";
+"Switch Account" = "Switch Account";
+
+"Use account binding to protect and transfer your game progress." = "Use account binding to protect and transfer your game progress.";
+
+"Switch to the previous account and continue the bound game." = "Switch to the previous account and continue the bound game.";
+
+"Switched Succeed" = "Switched Succeed";

@@ -1,0 +1,6 @@
+framework module MGUnionENSDK {
+  umbrella header "MGUnionENSDK.h"
+
+  export *
+  module * { export * }
+}

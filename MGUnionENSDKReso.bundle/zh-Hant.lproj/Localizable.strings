@@ -1,0 +1,56 @@
+"Bind Account" = "綁定帳戶";
+"Guest"="遊客";
+"Sign in with" = "登入";
+
+"Start new game" = "開始新遊戲";
+"ACCOUNT \n MANAGEMENT" = "帳戶管理";
+"Bound" = "已綁定";
+"Bind" = "去綁定";
+"You can bind your game account to multiple personal accounts" = "您的遊戲帳戶可以綁定多個協力廠商帳戶。";
+"CONFIRM" = "確定";
+"CANCEL" = "取消";
+"WARNING!" = "提示!";
+"Login succeed" =  "登錄成功";
+"Binding Failed" =  "綁定失敗";
+"Bound Succeed" = "綁定成功";
+"Facebook account login failed" =  "Facebook的登錄失敗";
+"Game Center account login failed. Please login Game Center in the system setting and restart the game" =  "Game Center未登入，請在系統設置中登入Game Center並重啓遊戲。";
+"payment successful" = "支付成功";
+"Order verification failed" =  "訂單校驗失敗";
+"Payment failed" =  "支付失敗";
+"Switch failed" =  "切換失敗";
+"account hasn't been bound with game data before, switched failed." =  "帳戶未綁定遊戲數據，切換失敗。";
+"  You've already signed up. Please log in or chreate a new one with other methods." = "  你已經註冊了。請使用其他方法登錄或創建新的。";
+"Expired Authorization and failed to reauthorize. Please log in with GameCenter and Restart the game to reauthorize, or Continue to log in with other devices." = "你的授權已過期並未能重新授權。請使用GameCenter登錄並重新啟動遊戲以重新授權，或者繼續使用其它設備登錄。";
+"Account Errors. You haven't connected with the third party account yet. The current account data won't be stored if you continue to log in with other accounts. Or click Cancel to go to Custom Service. Your Account UID: " = "你帳戶錯誤。您尚未與第三方帳戶建立關聯。如果您繼續使用其他帳戶登錄，則會丟失當前賬戶數據。您的帳戶UID：";
+"Expired Authorization and failed to reauthorize. Please check your Facebook and Restart the game to reauthorize, or Continue to log in with other devices." = "你的授權已過期並未能重新授權。請檢查您的Facebook並重新啟動遊戲以重新授權，或繼續使用其他賬戶登錄。";
+"No new account login, if you are sure you want to switch accounts, please switch GameCenter account from system settings or change account from Facebook app" = "沒有新帳戶登錄，如果您確定要切換帳戶，請從系統設置切換GameCenter帳戶或從Facebook應用程序更改帳戶";
+"Game data on the current device is not bound,Switching account will result in the loss of game data!Would you like to switch?" = "遊戲資料尚未綁定至任何帳戶，切換帳戶將遺失當前設備的遊戲資料，確定切換？";
+
+"Please enter Confirm" = "請輸入確定";
+
+"Confirm" = "確定";
+
+"The current" = "該";
+
+"Network Errors!" = "網絡异常";
+
+"Unknown Errors, please try again later." = "未知錯誤，請稍後重試";
+
+"Are you sure you want to start new game data？(This data has been bound ,you can recover it by switching accounts)" = "確認創建全新遊戲數據？（當前遊戲數據已綁定，可通過切換帳戶功能找回)";
+
+"The current account hasn't been bound with any other accounts, please bind with the third party's account in case of data loss." = "遊戲資料尚未綁定至任何帳戶，請綁定帳戶以防數據遺失";
+
+" Confirm "  = "去綁定";
+" Cancel " = "暫不綁定";
+
+"account has been bound with the game data before." = "帳戶已經綁定過遊戲數據";
+
+"Bind Account" = "綁定帳戶";
+"Switch Account" = "切換帳戶";
+
+"Use account binding to protect and transfer your game progress." = "綁定賬戶可以保護和遷移你的遊戲進度";
+
+"Switch to the previous account and continue the bound game." = "切換至已綁定遊戲數據的賬號並繼續遊戲.";
+
+"Switched Succeed" = "切換成功";

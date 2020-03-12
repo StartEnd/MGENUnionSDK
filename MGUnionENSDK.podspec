@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGUnionENSDK'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '微游戏海外联运SDK'
 
 # This description is used to generate tags and improve search results.
@@ -33,10 +33,10 @@ TODO: Add long description of the pod here.
   # 依赖的自己的Framework
   s.vendored_frameworks = 'MGUnionENSDK/MGUnionENSDK.framework'
   s.resources = 'MGUnionENSDK/MGUnionENSDKReso.bundle'
-  s.source_files = 'MGUnionENSDK/Classes/**/*'
+  # s.source_files = 'MGUnionENSDK/Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.dependency 'AppsFlyerFramework'

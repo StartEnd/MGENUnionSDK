@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGUnionENSDK'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '微游戏海外联运SDK'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
   
+    s.prefix_header_contents = '#define MGUNIONENSDKCOCOAPODS'
+  
   # 依赖的自己的Framework
   s.vendored_frameworks = 'MGUnionENSDK/MGUnionENSDK.framework'
   s.resources = 'MGUnionENSDK/MGUnionENSDKReso.bundle'
@@ -44,5 +46,7 @@ TODO: Add long description of the pod here.
   s.dependency 'FBSDKLoginKit'
   s.dependency 'FBSDKShareKit'
   s.dependency 'FBSDKPlacesKit'
+  s.dependency 'SVProgressHUD'
+  s.dependency 'Masonry'
   
 end

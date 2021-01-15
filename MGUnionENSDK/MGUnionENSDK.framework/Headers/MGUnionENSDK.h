@@ -46,16 +46,37 @@
     return YES;
  }
  
- // Facebook登录授权用
- - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    return  [MGUnionENSDK application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
- annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
- 
+ // 以下用于同步状态(必须)
+ - (void)applicationDidBecomeActive:(UIApplication *)application {
+     [MGUnionENSDK applicationDidBecomeActive:application];
  }
- // Facebook登录授权用
- - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return  [MGUnionENSDK application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+
+ - (BOOL)application:(UIApplication *)application
+             openURL:(NSURL *)url
+             options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+     
+     return [MGUnionENSDK application:application openURL:url options:options];
+     
  }
+
+ - (BOOL)application:(UIApplication *)application
+             openURL:(NSURL *)url
+   sourceApplication:(NSString *)sourceApplication
+          annotation:(id)annotation {
+     
+     return [MGUnionENSDK application:application openURL:url
+                                                         sourceApplication:sourceApplication
+                                                                annotation:annotation];
+ }
+
+ - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+     return [MGUnionENSDK application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+ }
+
+ - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+     [MGUnionENSDK application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+ }
+
  
  
  //代理配置
@@ -196,21 +217,23 @@ typedef void (^MGPaymentBlock)(NSString *orderNum, MGPayErrCode error);
 + (MGUnionENSDKUser *)currentUser;
 
 /**
- * 同步应用状态
+ * 以下五个API与appdelegate同名,用于同步应用状态
  */
 + (void)applicationDidBecomeActive:(UIApplication *)application;
+
++ (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation;
+
++ (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 
 + (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
 
 + (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 
-/**
- * facebook登录回调处理
- */
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation;
 
 /**
  AppFlyer统计

@@ -195,7 +195,14 @@ typedef void (^MGPaymentBlock)(NSString *orderNum, MGPayErrCode error);
  */
 + (MGUnionENSDKUser *)currentUser;
 
+/**
+ * 同步应用状态
+ */
++ (void)applicationDidBecomeActive:(UIApplication *)application;
 
++ (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
+
++ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 
 /**
  * facebook登录回调处理

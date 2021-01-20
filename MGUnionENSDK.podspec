@@ -43,9 +43,9 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.dependency 'AppsFlyerFramework'
-  s.dependency 'FBSDKCore'
-  s.dependency 'FBSDKLogin'
-  s.dependency 'FBSDKShare'
+  s.dependency 'FacebookCore'
+  s.dependency 'FacebookLogin'
+  s.dependency 'FacebookShare'
   s.dependency 'SVProgressHUD'
   s.dependency 'Masonry'
   

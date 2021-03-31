@@ -184,6 +184,13 @@ typedef void (^MGPaymentBlock)(NSString *orderNum, MGPayErrCode error);
 + (void)linkAccout;
 
 /**
+ * Get The Price with local currency 例如：￥6.00，$0.99
+ * productid 商品id
+ */
+
++ (NSString *)getLocalePrice:(NSString *)productid;
+
+/**
  支付(新)
  
  @param productid   下单的产品id

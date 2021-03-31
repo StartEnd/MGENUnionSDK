@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGUnionENSDK'
-  s.version          = '0.3.6'
+  s.version          = '0.3.7'
   s.summary          = '微游戏海外联运SDK'
 
 # This description is used to generate tags and improve search results.
@@ -43,9 +43,9 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.dependency 'AppsFlyerFramework'
-  s.dependency 'FacebookCore' , '~> 0.9.0'
-  s.dependency 'FacebookLogin' , '~> 0.9.0'
-  s.dependency 'FacebookShare' , '~> 0.9.0'
+  s.dependency 'FBSDKCoreKit' 
+  s.dependency 'FBSDKLoginKit' 
+  s.dependency 'FBSDKShareKit' 
   s.dependency 'SVProgressHUD'
   s.dependency 'Masonry'
   

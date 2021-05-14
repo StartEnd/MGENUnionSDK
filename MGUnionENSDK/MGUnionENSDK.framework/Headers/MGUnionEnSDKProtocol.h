@@ -57,7 +57,7 @@ typedef NS_ENUM (NSInteger,MGLogPlatform) {
 
  @param orderNum 订单标识
  */
-- (void)mg_oldOrderVerficationSuccess:(NSString *)orderNum;
+- (void)mg_oldOrderVerficationSuccess:(NSString *)orderNum cpext:(NSString *)cpext;
 
 
 @end

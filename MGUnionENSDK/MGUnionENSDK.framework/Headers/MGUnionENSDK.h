@@ -93,7 +93,7 @@
     }
  }
  
- - (void)mg_oldOrderVerficationSuccess:(NSString *)orderNum {
+ - (void)mg_oldOrderVerficationSuccess:(NSString *)orderNum cpext:(NSString *)cpext{
  
  }
  
@@ -132,7 +132,7 @@ typedef NS_ENUM (NSInteger,MGPayErrCode) {
 };
 
 
-typedef void (^MGPaymentBlock)(NSString *orderNum, MGPayErrCode error);
+typedef void (^MGPaymentBlock)(NSString * _Nullable  orderNum, MGPayErrCode error);
 
 
 @interface MGUnionENSDK : NSObject
@@ -195,13 +195,13 @@ typedef void (^MGPaymentBlock)(NSString *orderNum, MGPayErrCode error);
  
  @param productid   下单的产品id
  @param orderid     订单ID(校验用)
- @param cpex        透传参数(不做处理,原样返回)
+ @param cpext        透传参数(不做处理,原样返回)
  @param paymentBlock    支付回调
 
  */
 + (void)paymentWithProductid:(NSString *)productid
                      orderid:(NSString *)orderid
-                        cpex:(NSString *)cpex
+                       cpext:(NSString *)cpext
                     callback:(MGPaymentBlock)paymentBlock;
 
 
@@ -243,7 +243,7 @@ typedef void (^MGPaymentBlock)(NSString *orderNum, MGPayErrCode error);
 
 
 /**
- AppFlyer统计
+ AppFlyer统计(需要在info.plist中配置FlyerDevKey，FlyerID)
  
  两个API,按需选用
  

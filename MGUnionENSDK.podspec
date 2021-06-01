@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGUnionENSDK'
-  s.version          = '0.3.9'
+  s.version          = '0.3.10'
   s.summary          = '微游戏海外联运SDK'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/StartEnd/MGENUnionSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -48,5 +48,6 @@ TODO: Add long description of the pod here.
   s.dependency 'FBSDKShareKit' 
   s.dependency 'SVProgressHUD'
   s.dependency 'Masonry'
-  
+  s.dependency 'Firebase/Analytics'
+
 end

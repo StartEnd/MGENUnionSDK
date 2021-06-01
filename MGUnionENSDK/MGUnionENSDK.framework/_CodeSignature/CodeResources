@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MGUnionENSDK.h</key>
 		<data>
-		pLs76NT2KFwqL2NQyiCUF5iYkZ8=
+		tmfJiX0lYSwNtTtg29i+AYd7JSo=
 		</data>
 		<key>Headers/MGUnionENSDKObject.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/MGUnionEnSDKProtocol.h</key>
 		<data>
-		uFB6+toaSxPSKUM95HocQzqLH1k=
+		kR7k5P1KKPNJ2gMCqIpeqS7F5s8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iQLrRGuy77MndEo7UrY9oS2nZ8o=
+		oVvy8Tw1KwZ7fwalEJl3yXXiltI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pLs76NT2KFwqL2NQyiCUF5iYkZ8=
+			tmfJiX0lYSwNtTtg29i+AYd7JSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			EImCqww56N8zOtVg4tppTyY93RbYMs6C0RUpdsjuY98=
+			974eEsERuckYPg1ilclizKK8xPqQ2URol1i5jXV5vnY=
 			</data>
 		</dict>
 		<key>Headers/MGUnionENSDKObject.h</key>
@@ -68,11 +68,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uFB6+toaSxPSKUM95HocQzqLH1k=
+			kR7k5P1KKPNJ2gMCqIpeqS7F5s8=
 			</data>
 			<key>hash2</key>
 			<data>
-			M82roi3WiFNcJ5evlFZNCysDSRGT/j/lmch1YvDi48M=
+			JEVjzISvFZ5kercqMFyqSOwXqZkEyJ7pzQ9afku6nPc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

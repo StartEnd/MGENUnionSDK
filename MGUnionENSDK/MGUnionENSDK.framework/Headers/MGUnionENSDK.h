@@ -146,12 +146,12 @@ typedef void (^MGPaymentBlock)(NSString * _Nullable  orderNum, MGPayErrCode erro
  @param loginType   默认登录方式
  @param delegate    SDK代理(推荐用AppDelegate)
  */
-+ (void)registSDKwithAppkey:(NSString *)appkey
-                 productids:(NSDictionary *)ids
++ (void)registSDKwithAppkey:(NSString *_Nullable)appkey
+                 productids:(NSDictionary *_Nullable)ids
                   loginType:(MGDefaultLoginType) loginType
-                   delegate:(id<MGUnionENSDKDelegate>)delegate
-                application:(UIApplication *)application
-              launchOptions:(NSDictionary *)launchOptions;
+                   delegate:(id<MGUnionENSDKDelegate>_Nullable)delegate
+                application:(UIApplication *_Nullable)application
+              launchOptions:(NSDictionary *_Nullable)launchOptions;
 
 
 /**
@@ -188,7 +188,7 @@ typedef void (^MGPaymentBlock)(NSString * _Nullable  orderNum, MGPayErrCode erro
  * productid 商品id
  */
 
-+ (NSString *)getLocalePrice:(NSString *)productid;
++ (NSString *_Nullable)getLocalePrice:(NSString *_Nullable)productid;
 
 /**
  支付(新)
@@ -199,10 +199,10 @@ typedef void (^MGPaymentBlock)(NSString * _Nullable  orderNum, MGPayErrCode erro
  @param paymentBlock    支付回调
 
  */
-+ (void)paymentWithProductid:(NSString *)productid
-                     orderid:(NSString *)orderid
-                       cpext:(NSString *)cpext
-                    callback:(MGPaymentBlock)paymentBlock;
++ (void)paymentWithProductid:(NSString *_Nullable)productid
+                     orderid:(NSString *_Nullable)orderid
+                       cpext:(NSString *_Nullable)cpext
+                    callback:(MGPaymentBlock _Nullable )paymentBlock;
 
 
 /**
@@ -213,33 +213,33 @@ typedef void (^MGPaymentBlock)(NSString * _Nullable  orderNum, MGPayErrCode erro
  @param paymentBlock    支付回调
 
  */
-+ (void)paymentWithProductid:(NSString *)productid
-                        sign:(NSString *)orderNum
-                    callback:(MGPaymentBlock)paymentBlock;
++ (void)paymentWithProductid:(NSString *_Nullable)productid
+                        sign:(NSString *_Nullable)orderNum
+                    callback:(MGPaymentBlock _Nullable )paymentBlock;
 
 
 /**
  * 返回当前的用户(后台切换前台不需要登录时可直接获取用户信息)
  */
-+ (MGUnionENSDKUser *)currentUser;
++ (MGUnionENSDKUser *_Nullable)currentUser;
 
 /**
  * 以下五个API与appdelegate同名,用于同步应用状态
  */
-+ (void)applicationDidBecomeActive:(UIApplication *)application;
++ (void)applicationDidBecomeActive:(UIApplication *_Nullable)application;
 
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation;
++ (BOOL)application:(UIApplication *_Nullable)application
+            openURL:(NSURL *_Nullable)url
+  sourceApplication:(NSString *_Nullable)sourceApplication
+         annotation:(id _Nullable )annotation;
 
-+ (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
++ (BOOL)application:(UIApplication *_Nullable)application
+            openURL:(NSURL *_Nullable)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *_Nullable)options;
 
-+ (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
++ (BOOL)application:(UIApplication *_Nullable)application continueUserActivity:(NSUserActivity *_Nullable)userActivity restorationHandler:(void (^_Nullable)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
 
-+ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
++ (void)application:(UIApplication *_Nullable)application didReceiveRemoteNotification:(NSDictionary *_Nullable)userInfo fetchCompletionHandler:(void (^_Nullable)(UIBackgroundFetchResult))completionHandler;
 
 
 /**
@@ -254,7 +254,7 @@ typedef void (^MGPaymentBlock)(NSString * _Nullable  orderNum, MGPayErrCode erro
 
 /*
  AF的收入需要手动添加,参考如下
- [MGUnionENSDK  afTrackEvent: AFEventPurchase parameters:@{
+ [MGUnionENSDK  afTrackEvent: @"af_purchase" parameters:@{
      AFEventParamContentId:@"1234567", //商品
      AFEventParamContentType : @"category_a",//商品类型
      AFEventParamRevenue: @1.99,//价格
@@ -262,9 +262,9 @@ typedef void (^MGPaymentBlock)(NSString * _Nullable  orderNum, MGPayErrCode erro
  }];
  */
 
-+ (void)afTrackEvent:(NSString *)eventName parameters:(NSDictionary *)parameters;
++ (void)afTrackEvent:(NSString *_Nullable)eventName parameters:(NSDictionary *_Nullable)parameters;
 
-+ (void)afTrackEvent:(NSString *)eventName;
++ (void)afTrackEvent:(NSString *_Nullable)eventName;
 
 /**
 FaceBook统计
@@ -275,11 +275,19 @@ FaceBook统计
 @valuesToSum    价格/评分/点数等,仅在部分标准事件中应用(参看Facebook文档:https://developers.facebook.com/docs/app-events/getting-started-app-events-ios/?translation#predefined-events)
 */
 
-+ (void)fbTrackEvent:(NSString *)eventName parameters:(NSDictionary *)parameters;
++ (void)fbTrackEvent:(NSString *_Nullable)eventName parameters:(NSDictionary *_Nullable)parameters;
 
-+ (void)fbTrackEvent:(NSString *)eventName;
++ (void)fbTrackEvent:(NSString *_Nullable)eventName;
 
+/**
+ FireBase统计
+ 两个API,按需选用
+ 
+ @eventName     事件名
+ @values        事件参数
+ */
 
-
++ (void)firebaseLogEventWithName:(NSString *_Nullable)eventName
+              parameters:(nullable NSDictionary<NSString *, id> *)parameters;
 @end
 

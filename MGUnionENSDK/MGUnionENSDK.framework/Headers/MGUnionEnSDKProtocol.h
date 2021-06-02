@@ -27,7 +27,6 @@ typedef NS_ENUM (NSInteger,MGLogPlatform) {
     MGLogPlatform_Facebook = 0,         //Facebook统计
     MGLogPlatform_AppsFlyer = 1,        //AppsFlyer打点
     MGLogPlatform_FireBase = 2         //FireBase打点
-
 };
 
 @protocol MGUnionENSDKDelegate

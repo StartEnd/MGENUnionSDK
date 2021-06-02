@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGUnionENSDK'
-  s.version          = '0.3.10'
+  s.version          = '0.3.11'
   s.summary          = '微游戏海外联运SDK'
 
 # This description is used to generate tags and improve search results.
